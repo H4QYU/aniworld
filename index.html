@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>AniWorld</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- شاشة التحميل -->
+  <div id="loading" class="loading">
+    <div class="spinner"></div>
+    <p>جاري الدخول...</p>
+  </div>
+
+  <div class="box">
+    <h1>AniWorld</h1>
+    <p>ادخل كلمة السر 🔐</p>
+
+    <div class="input-container">
+      <input type="password" id="password" placeholder="كلمة السر">
+      <span class="eye" onclick="togglePassword()">👁️</span>
+    </div>
+
+    <button onclick="checkPassword()">دخول</button>
+
+    <p class="error" id="error"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
